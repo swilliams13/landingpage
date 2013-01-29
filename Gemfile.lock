@@ -115,6 +115,7 @@ GEM
     multi_json (1.5.0)
     nokogiri (1.5.6-x86-mingw32)
     orm_adapter (0.4.0)
+    pg (0.14.1-x86-mingw32)
     polyglot (0.3.3)
     quiet_assets (1.0.1)
       railties (~> 3.1)
@@ -216,6 +217,7 @@ DEPENDENCIES
   jquery-datatables-rails (>= 1.10.0)
   jquery-rails
   launchy (>= 2.1.2)
+  pg
   quiet_assets (>= 1.0.1)
   rails (= 3.2.11)
   rolify (>= 3.2.0)
