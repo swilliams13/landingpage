@@ -10,7 +10,7 @@ gem "figaro", ">= 0.5.0"
 gem "hominid"
 gem "google_visualr", ">= 2.1.2"
 gem "jquery-datatables-rails", ">= 1.10.0"
-
+gem "mandrill-api"
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
