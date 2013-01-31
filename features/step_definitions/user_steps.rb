@@ -32,7 +32,7 @@ def sign_up
   delete_user
   visit '/users/sign_up'
   fill_in "Email", :with => @visitor[:email]
-  click_button "Request Invitation"
+  click_button "Request Invite"
   find_user
 end
 

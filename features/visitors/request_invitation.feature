@@ -8,11 +8,11 @@ Feature: Request Invitation
 
   Scenario: User views home page
     When I visit the home page
-    Then I should see a button "Request Invitation"
+    Then I should see a button "Request Invite"
 
   Scenario: User views invitation request form
     When I visit the home page
-    And I click a button "Request Invitation"
+    And I click a button "Request Invite"
     Then I should see a form with a field "Email"
 
   Scenario: User signs up with valid data

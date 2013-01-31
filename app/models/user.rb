@@ -9,6 +9,9 @@ class User < ActiveRecord::Base
   attr_accessible :role_ids, :as => :admin
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me, :opt_in
 
+ after_create :add_user_to_mailchimp unless Rails.env.test?
+  before_destroy :remove_user_from_mailchimp unless Rails.env.test?
+  
   # override Devise method
   # no password is required when the account is created; validate password when the user sets one
   validates_confirmation_of :password
@@ -19,6 +22,8 @@ class User < ActiveRecord::Base
       !password.nil? || !password_confirmation.nil?
     end
   end
+
+
 
  # override Devise method
   def confirmation_required?
@@ -68,5 +73,6 @@ private
       Rails.logger.info("MAILCHIMP UNSUBSCRIBE: result #{result.inspect} for #{self.email}")
     end
   end
+
 
 end
