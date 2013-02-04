@@ -11,6 +11,7 @@ gem "hominid"
 gem "google_visualr", ">= 2.1.2"
 gem "jquery-datatables-rails", ">= 1.10.0"
 gem "mandrill-api"
+gem 'pg'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -40,7 +41,6 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
   gem "thin", ">= 1.5.0"
 end
 
