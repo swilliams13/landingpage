@@ -2,34 +2,49 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Airfordable" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Airfordable Layaway for Flights" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Airfordable" %>">
+    <meta name="viewport" content="width=700; initial-scale=0.9; maximum-scale=1.0;">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'> 
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <%= yield(:head) %>
   </head>
-  <body class="<%= controller_name %> <%= action_name %>">
-    <header class="navbar navbar-fixed-top">
-      <nav class="navbar-inner">
-        <div class="container">
-          <%= render 'layouts/navigation' %>
-        </div>
-      </nav>
-    </header>
-    <div id="main" role="main">
-      <div class="container">
-        <div class="content">
-           <div class="row">
-            <div class="span12">
-              <%= render 'layouts/messages' %>
-              <%= yield %>
+  <body>
+
+       
+        <div class="videoDivider"></div> 
+        <div class="main">
+            <div class="logo"><img src="assets/logo.png"/></div>
+            <div class="content anim">
+                <div class="line">
+                    <div>
+                        <div class="text">COMING SOON</div>
+                    </div>
+                </div>
+                <div class="motto"><h1>Layaway for air travel? Yes!</h1>Search and book your flight today.<br>Make payments over time. <br> No credit check necessary.</div>
+                <div class="line2"></div>
             </div>
-          </div>
-          <footer>
-          </footer>
-        </div>
-      </div> <!--! end of .container -->
-    </div> <!--! end of #main -->
-  </body>
+            <div class="form anim">
+                <form name="joinus">
+                    <div class="formvalidate">Please enter the correct email!<div class="arrow"><img src="assets/arrow01.png"/></div></div>
+                    <div class="formsent">Thank you for joining beta testing! We'll inform you for the exclusive beta launch.<span>You can follow us on social media</span><div class="arrow"><img src="assets/arrow02.png"/></div></div>
+                    <input class="mail" placeholder="Join our exclusive beta testing"/>
+                    <div class="joinusButton">Join Us</div>
+                </form>
+            </div>
+            <div class="social anim">
+                <ul>
+                    <li><a href="http://twitter.com/FlyAirfordable"><img src="assets/social01.png"/></a></li>
+                    <li><a href="#"><img src="assets/social02.png"/></a></li>
+                    <li><a href="#"><img src="assets/social03.png"/></a></li>
+                    <li><a href="#"><img src="assets/social04.png"/></a></li>
+                    <li><a href="#"><img src="assets/social05.png"/></a></li>
+                </ul>
+            </div>
+         
+        </div> 
+    </body>
 </html>
