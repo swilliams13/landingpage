@@ -76,7 +76,7 @@ input {font-family: 'Open Sans', sans-serif; outline: none;}
 .main {width: 960px; margin: 0 auto;    
        transform-style: preserve-3d;
        -moz-perspective:600px; }
-.logo {width:400px; margin: 0 auto; -webkit-animation: Logo 1.5s ease-out 0s 1 alternate; -moz-animation: Logo 1.5s ease-out 0s 1 alternate; -o-animation: Logo 1.5s ease-out 0s 1 alternate; animation: Logo 1.5s ease-out 0s 1 alternate;}
+.logo {width:350px; margin: 0 auto; -webkit-animation: Logo 1.5s ease-out 0s 1 alternate; -moz-animation: Logo 1.5s ease-out 0s 1 alternate; -o-animation: Logo 1.5s ease-out 0s 1 alternate; animation: Logo 1.5s ease-out 0s 1 alternate;}
 
 .content { width: 605px; margin: 0 auto; -webkit-animation: Content 1.5s ease-out 1s 1 alternate; -moz-animation: Content 1.5s ease-out 1s 1 alternate; -o-animation: Content 1.5s ease-out 1s 1 alternate; animation: Content 1.5s ease-out 1s 1 alternate;}
 .content .line { width: 605px; margin: 0 auto; margin-top: 30px; background: url(/assets/line01.png); background-repeat: no-repeat; background-position: center; height: 20px;}
@@ -87,9 +87,26 @@ input {font-family: 'Open Sans', sans-serif; outline: none;}
 .content .line2 { width: 605px; margin: 0 auto; background: url(/assets/line02.png); background-repeat: no-repeat; background-position: center; height: 20px;}
 
 .form {width: 455px; margin:  0 auto; margin-top: 25px; padding: 10px; -webkit-animation: FadeIn 1.5s ease-out 2s 1 alternate; -moz-animation: FadeIn 1.5s ease 2s 1 alternate; -o-animation: FadeIn 1.5s ease-out 2s 1 alternate; animation: FadeIn 1.5s ease-out 2s 1 alternate;}
-.form .mail{ padding: 3px 3px 3px 38px; float: left; height: 42px; border: 2px solid #bbb; color: #555; width: 300px; background: url(/assets/icon_mail.png) #fff no-repeat left center; background-position:5px 13px; font-size: 15px; font-weight: 300; -webkit-border-radius: 5px; border-radius: 5px; }
+.form .mail{ padding: 3px 3px 3px 38px; float: left; height: 42px; border: 2px solid #bbb; color: #555; width: 300px; background: url(/assets/icon_mail2.png) #fff no-repeat left center; background-position:5px 13px; font-size: 15px; font-weight: 300; -webkit-border-radius: 5px; border-radius: 5px; }
 .form .mail:hover {border-color: #3596b9;}
-.form .mail:placeholder {color:#999;}
+
+/*Change Color of Placeholder Text*/
+::-webkit-input-placeholder {
+   color: #999;
+}
+
+.form .mail:-moz-placeholder { /* Firefox 18- */
+   color: #999;  
+}
+
+.form .mail::-moz-placeholder {  /* Firefox 19+ */
+   color: #999;  
+}
+
+.form .mail:-ms-input-placeholder {  
+   color: #999;  
+}
+
 .form .joinusButton { background: url(/assets/button.png); cursor: pointer; float: left; width: 122px; height: 42px; margin-left: 10px; text-align: center; font-weight: 700; color: #fff; font-size: 16px; line-height: 40px; text-shadow: 1px 1px 0px #146482; filter: dropshadow(color=#146482, offx=1, offy=1);}
 .form .joinusButton:hover {background: url(/assets/button_hover.png);}
 
@@ -459,3 +476,5 @@ input {font-family: 'Open Sans', sans-serif; outline: none;}
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
 }
+
+
