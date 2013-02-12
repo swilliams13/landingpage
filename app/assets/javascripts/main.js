@@ -12,14 +12,14 @@ ReAlign();
 //Video Loader
 //******** IF YOU WANT TO PLAY VIDEO ON BACKGROUND, UNCOMMENT THE FOLLOWING CODES ********//
 //$('body').videoBG({
-//		position:"fixed",
-//		zIndex:0,
-//		mp4:'videos/video3.mp4',
-//		ogv:'videos/video3.mp4',
-//		webm:'videos/video3.mp4',
-//		poster:'img/bg2.jpg',
-//		opacity:1,
-//		fullscreen:true
+//    position:"fixed",
+//    zIndex:0,
+//    mp4:'videos/video3.mp4',
+//    ogv:'videos/video3.mp4',
+//    webm:'videos/video3.mp4',
+//    poster:'img/bg2.jpg',
+//    opacity:1,
+//    fullscreen:true
 //});
 
 //$('.videoDivider').css('margin-top', ($(window).height()-700)/2);

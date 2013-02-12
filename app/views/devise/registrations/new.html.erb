@@ -1,14 +1,29 @@
-<div id="request-invite" class="form anim" style="display: <%= @user.errors.any? ? 'block' : 'none';%>">
-  <%= simple_form_for resource, :as => resource_name, :url => registration_path(resource_name) , :html => {:class => 'form-horizontal' } do |f| %>
-    <div name="joinus">
-      <%= f.error_notification %>
-      <div class="formvalidate">Please enter the correct email!<div class="arrow"><img src="img/arrow01.png"/></div></div>
-                    <div class="formsent">Thank you for joining beta testing! We'll inform you for the exclusive beta launch.<span>You can follow us on social media</span><div class="arrow"><img src="img/arrow02.png"/></div></div>
-      <%= f.input :email, :placeholder => 'Join our exclusive beta testing', :class => "mail" %>
-    </div>
-    
-      <%= f.submit "Join Us", :class => "btn btn-primary joinusButton", :id => 'invitation_button' %>
-      
-    </div>
-  <% end %>
-</div>
+ <div class="videoDivider"></div> 
+        <div class="main">
+            <div class="logo"><img src="assets/AFLogo4.png"/></div>
+            <div class="content anim">
+                <div class="line">
+                    <div>
+                        <div class="text">COMING SOON</div>
+                    </div>
+                </div>
+                <div class="motto"><h1>Layaway for Air Travel? Yes!</h1>Search for a flight. Lock in the price.<br>Make payments over time.<br>No credit check necessary.</div>
+                <div class="line2"></div>
+            </div>
+            <div class="form anim">
+                <form name="joinus">
+                    <div class="formvalidate">Please enter the correct email!<div class="arrow"><img src="assets/arrow01.png"/></div></div>
+                    <div class="formsent">Thank you for joining beta testing! We'll inform you for the exclusive beta launch.<span>You can follow us on social media</span><div class="arrow"><img src="assets/arrow02.png"/></div></div>
+                    <input class="mail" placeholder="Join our exclusive beta testing"/>
+                    <a class="btn btn-primary btn-larg joinusButton">Join Us</a>
+                </form>
+            </div>
+            <div class="social anim">
+                <ul>
+                    <li><a href="http://twitter.com/FlyAirfordable"><img src="assets/social01.png"/></a></li>
+                    <li><a href="#"><img src="assets/social02.png"/></a></li>
+                    <li><a href="https://angel.co/airfordable-1"><img src="assets/social06b.png"/></a></li>
+                </ul>
+            </div>
+         
+        </div> 
