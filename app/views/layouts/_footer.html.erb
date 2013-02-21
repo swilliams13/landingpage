@@ -1,0 +1,19 @@
+ <footer class="<%= user_signed_in? ? '' : 'anim' %>">
+	<% if user_signed_in? %>
+		<div class="line"> 
+			<div class="text">&copy; Airfordable 2013</div>
+    	</div>
+	<% else %>
+		<div class="line2"></div>
+		<div class="container">
+			<small>&copy; Airfordable 2013</small>
+			<ul>
+				<li><%= link_to "About", about_path %></li>
+				<li><%= link_to "Team", team_path %></li>
+			</ul>
+		</div>
+	<% end %>
+</footer>
+
+
+	

@@ -16,4 +16,8 @@ RailsPrelaunchSignup::Application.routes.draw do
     get 'invite', :on => :member
   end
 
+  match '/about', to: 'static#about'
+  match '/how', to: 'static#how'
+  match '/team', to: 'static#team'
+
 end

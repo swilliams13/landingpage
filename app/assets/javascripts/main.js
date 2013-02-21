@@ -32,19 +32,21 @@ $('.videoDivider').hide();
 //Video Loader End
 
 
-$(".joinusButton").click(function() {
-  if (validateEmail($('.mail').val()) === false ) {$('.formvalidate').fadeIn();}
-  else {
-  $.ajax({
-  url: 'mail.php?email='+$('.mail').val(),
-  success: function(data) {
-    if (data == "OK")
-    {$('.formsent').fadeIn();}
-  }
-});
-      $('.formvalidate').fadeOut();}
-});
+  $(".signin").click(function(e) {
+                e.preventDefault();
+                $("fieldset#signin_menu").toggle();
+                $(".signin").toggleClass("menu-open");
+            });
 
+            $("fieldset#signin_menu").mouseup(function() {
+                return false
+            });
+            $(document).mouseup(function(e) {
+                if($(e.target).parent("a.signin").length==0) {
+                    $(".signin").removeClass("menu-open");
+                    $("fieldset#signin_menu").hide();
+                }
+            });            
 
 });
 
@@ -59,4 +61,4 @@ $('.main').css('margin-top',$(window).height()/2-300);
 function validateEmail(email) { 
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
-} 
+}        

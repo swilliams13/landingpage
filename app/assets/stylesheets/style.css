@@ -5,7 +5,8 @@ body { background: white; font-family: 'Open Sans', sans-serif;
        font-weight: normal; font-style: normal; font-size: 14px;
        line-height: 1; color: #222222; position: relative;
        -webkit-font-smoothing: antialiased; 
-       background-image: url(/assets/bg4.jpg);}
+       background-image: url(/assets/bg4.jpg);
+       }
 
 /* Links ---------------------- */
 a img { border: none; }
@@ -30,6 +31,14 @@ p a, p a:visited { line-height: inherit; }
 figure { margin: 0; }
 /* Base Type Styles Using Modular Scale ---------------------- */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td { margin: 0; padding: 0; font-size: 14px; direction: ltr; }
+body {padding-top: 60px;}
+
+body.registrations.new {
+  padding-top: 0px;
+}
+
+
+
 p { font-family: inherit; font-weight: normal; font-size: 14px; line-height: 1.6; margin-bottom: 17px; }
 p.lead { font-size: 17.5px; line-height: 1.6; margin-bottom: 17px; }
 aside p { font-size: 13px; line-height: 1.35; font-style: italic; }
@@ -88,7 +97,7 @@ input {font-family: 'Open Sans', sans-serif; outline: none;}
 .content .motto h1{color: #fff; text-shadow: 0 -1px 1px #000947; line-height: 28px;}
 .content .line2 { width: 605px; margin: 0 auto; background: url(/assets/line02.png); background-repeat: no-repeat; background-position: center; height: 20px;}
 
-.form {width: 455px; margin:  0 auto; margin-top: 25px; padding: 10px; -webkit-animation: FadeIn 1.5s ease-out 2s 1 alternate; -moz-animation: FadeIn 1.5s ease 2s 1 alternate; -o-animation: FadeIn 1.5s ease-out 2s 1 alternate; animation: FadeIn 1.5s ease-out 2s 1 alternate;}
+.form {width: 455px; margin:  0 auto; padding: 10px; -webkit-animation: FadeIn 1.5s ease-out 2s 1 alternate; -moz-animation: FadeIn 1.5s ease 2s 1 alternate; -o-animation: FadeIn 1.5s ease-out 2s 1 alternate; animation: FadeIn 1.5s ease-out 2s 1 alternate;}
 .form .mail{ padding: 3px 3px 3px 38px; float: left; height: 42px; border: 2px solid #bbb; color: #555; width: 300px; background: url(/assets/icon_mail2.png) #fff no-repeat left center; background-position:5px 13px; font-size: 15px; font-weight: 300; -webkit-border-radius: 5px; border-radius: 5px;}
 .form .mail:hover {border-color: #3596b9;}
 #joinusButton { cursor: pointer; float: left; width: 122px; height: 42px; margin-left: 10px; font-weight: 700; font-size: 16px;}
@@ -462,7 +471,7 @@ input {font-family: 'Open Sans', sans-serif; outline: none;}
 
 /*----------Sign In------------------*/
 #topnav {
-    padding:10px 0px 12px;
+    padding:10px 20px 12px;
     font-size:11px;
     line-height:23px;
     text-align:right;
@@ -525,7 +534,7 @@ a.signin.menu-open span {
     display:none;
     background-color:#ddeef6;
     position:absolute;
-    width:210px;
+    width:220px;
     z-index:100;
     border:1px transparent;
     text-align:left;
@@ -533,7 +542,7 @@ a.signin.menu-open span {
     top: 24.5px;
     right: 0px;
     margin-top:5px;
-    margin-right: 0px;
+    margin-right: 20px;
     *margin-right: -1px;
     color:#789;
     font-size:11px;
@@ -587,4 +596,79 @@ border:0;
 #signin_submit:hover, #signin_submit:focus {
     background-position:0 -5px;
     cursor:pointer;
+}
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  color: #999;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 5030;
+  margin-bottom: 15px;
+  bottom: 0;
+-webkit-animation: FadeIn 1.5s ease-out 2s 1 alternate; -moz-animation: FadeIn 1.5s ease 2s 1 alternate; -o-animation: FadeIn 1.5s ease-out 2s 1 alternate; animation: FadeIn 1.5s ease-out 2s 1 alternate;
+}
+
+footer a {
+  color: #003366;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer small {
+  float: left;
+  text-align: center;
+  color: #003366;
+  font-size: 100%;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+  text-align: center;
+}
+
+footer .line2 {
+margin: 0 auto;
+background: url(/assets/line02.png);
+background-repeat: repeat-x;
+background-position: center;
+height: 20px;
+}
+
+footer .line 
+{ width: 605px; margin: 0 auto; margin-top: 10px; background: url(/assets/line01.png); background-repeat: no-repeat; background-position: center; height: 20px;}
+footer .line .text {margin:0 auto; width: 150px; text-align: center; color: #003366; font-size: 14px; font-weight: 300;}
+
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+.headshot img{
+  width: 150px;
+height: 150px;
+-webkit-border-radius: 50em;
+-moz-border-radius: 50em;
+border-radius: 50em;
+}
+
+.image-wrap {
+  -webkit-border-radius: 50em;
+  -moz-border-radius: 50em;
+  border-radius: 50em;
+position: relative;
+display: inline-block;
+background: url(assets/SamAF.png) no-repeat center center;
+width: 150px;
+height: 150px;
 }

@@ -1,3 +1,4 @@
+<div class="main" id="main" role="main">
 <h2>Account Activation</h2>
 <%= simple_form_for resource, :as => resource_name, :url => update_user_confirmation_path, :html => {:class => 'form-horizontal', :method => 'put'}, :id => 'activation-form' do |f| %>
   <%= devise_error_messages! %>
@@ -22,3 +23,4 @@
     <p><%= f.submit "Activate" %></p>
   </fieldset>
 <% end %>
+</div>
